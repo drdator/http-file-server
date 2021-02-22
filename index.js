@@ -20,7 +20,7 @@ const getContentType = (path) =>  {
   return mimeMap[ext] || mimeMap['bin'];
 }
 
-const humanFileSize = (bytes, si = false, dp=1) => {
+const humanFileSize = (bytes, si = false, dp = 1) => {
   const thresh = si ? 1000 : 1024;
   if (Math.abs(bytes) < thresh) {
     return bytes + ' B';
